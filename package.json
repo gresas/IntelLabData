@@ -1,0 +1,21 @@
+{
+  "name": "intel_lab_data",
+  "version": "1.0.0",
+  "description": "IntelLabData",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "dotenv": "^10.0.0",
+    "node-telegram-bot-api": "^0.54.0",
+    "ramda": "^0.27.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme R.",
+  "license": "ISC"
+}
