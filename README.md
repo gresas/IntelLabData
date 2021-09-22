@@ -30,6 +30,10 @@ Além disso, é necessário ter uma instância do rabbitMQ em execução, voce p
 
 `docker run -d -it --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management` <br>
 
+Para finalizar, extraia o arquivo `data/` do `data.zip` e deixe-o no diretório raiz do projeto.
+
+`unzip data.zip`
+
 ## Executando o Projeto...
 
 Antes de mais nada, [crie](https://t.me/botfather) um `TELEGRAM_TOKEN` e o adicione no arquivo de configuração `.env`.
@@ -38,8 +42,7 @@ Na primeira vez em que for executar o projeto, é necessário definir o `TELEGRA
 
 `npm run listen` - para executar o listener <br>
 
-E inicie a conversa com o Bot já configurado IntelLabData2021 no Telegram, enviando a mensagem `/start`. Notará que um ID irá aparecer no console do listener. Copie e cole esse id na variável de ambiente `TELEGRAM_CHAT_ID`. Caso queira adicionar múltiplos IDs, coloque-os separados por vírgula na variável de ambiente Ex.: `TELEGRAM_CHAT_ID=124124512,721124512,127434512`
-<br>
+Caso voce tenha o token do Bot já configurado do projeto(encontrado na documentação Word), procure por `IntelLabData2021` no seu Telegram app, e envie a mensagem `/start`. Notará que um ID irá aparecer no console do listener. Copie e cole esse id na variável de ambiente `TELEGRAM_CHAT_ID`. Caso queira adicionar múltiplos IDs, coloque-os separados por vírgula na variável de ambiente Ex.: `TELEGRAM_CHAT_ID=124124512,721124512,127434512` <br><br>
 Após configurar os IDs do chat e o `TELEGRAM_TOKEN` do Bot, basta reiniciar o listener para carregar as varáveis de ambiente na memória e execute o simulador de envio. Aguarde 30 segundos até o envio começar...:
 
 `npm run fire` - para simular o envio dos dados dos dispositivos <br>
