@@ -14,7 +14,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fire": "node index.js fire",
+    "listen": "node index.js listen"
   },
   "author": "Guilherme R.",
   "license": "ISC"
